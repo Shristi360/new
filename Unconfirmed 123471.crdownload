@@ -1,0 +1,15 @@
+
+function swap()
+  {
+     var x=document.getElementById("first").value;
+	 var y=document.getElementById("second").value;
+	 temp=x;
+	 x=y;
+	 y=temp;
+	 document.getElementById("answer1").value=x;
+	 document.getElementById("answer2").value=y;
+	 
+   }
+   
+	 
+	 

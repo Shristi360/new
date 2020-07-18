@@ -1,0 +1,75 @@
+function chkfname()
+{
+	 var i=document.getElementById("fname").value;
+     var pos=i.search(/[A-Z][a-z]+$/);
+         if(pos!=0)
+         {
+	       alert("Enter First name in correct format");
+		   document.getElementById("fname").focus();
+		   document.getElementById("fname").select();
+         }
+		  
+}
+function chkmname()
+{
+	 var i=document.getElementById("sname").value;
+     var pos=i.search(/?[A-Z]+/);
+         if(pos!=0)
+         {
+	       alert("Enter Second name in correct format");
+		   document.getElementById("sname").focus();
+		   document.getElementById("sname").select();
+         }
+		  
+}
+function chklname()
+{
+	 var i=document.getElementById("lname").value;
+     var pos=i.search(/[A-Z][a-z]+$/);
+         if(pos!=0)
+         {
+	       alert("Enter Last name in correct format");
+		   document.getElementById("lname").focus();
+		   document.getElementById("lname").select();
+         }
+		  
+}
+
+function chkph()
+{ var i=document.getElementById("phone").value;
+	 var pos=i.search(/\d{10}/);
+	 if(pos!=0)
+	 {
+		  alert("Enter phone number in correct format");
+	 }
+}
+
+function chkpass()
+{
+	confirm("Password must contain atleast: 1 lowercase, 1uppercase, 1 number, 1 special character");
+	var i=document.getElementById("pass").value;
+	var pos=i.search(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{4,8}$/);
+	if(pos!=0)
+	{
+		alert("Enter password in correct format");
+	}
+}
+
+function placeadd()
+{
+
+	  alert("Address is set as Postal address");
+}
+
+function submitform()
+{
+	if(document.getElementById("fname").value=="")
+	{
+		alert("Enter details");
+	}
+	else
+	{
+	confirm("CONFIRM");
+	alert("Your form has been submitted");
+}
+}
